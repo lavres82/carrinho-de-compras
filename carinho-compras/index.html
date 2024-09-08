@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Loja Online</h1>
+    <nav>
+      <a href="#" id="login-link">Login</a> |
+      <a href="#" id="signup-link">Criar Conta</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Produtos Disponíveis</h2>
+      <div id="product-list"></div>
+    </section>
+
+    <section id="cart">
+      <h2>Carrinho de Compras</h2>
+      <div id="cart-items"></div>
+      <button id="checkout-btn">Finalizar Compra</button>
+    </section>
+
+    <section id="user-auth" style="display:none;">
+      <h2>Login / Cadastro</h2>
+      <form id="auth-form">
+        <input type="text" id="username" placeholder="Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button type="submit" id="auth-submit">Entrar</button>
+      </form>
+
+<!-- Formulário para adicionar novos produtos -->
+<h2>Adicionar Novo Produto</h2>
+<form id="add-product-form">
+  <input type="text" id="product-name" placeholder="Nome do Produto" required>
+  <input type="number" id="product-price" placeholder="Preço" required>
+  <input type="text" id="product-image" placeholder="URL da Imagem" required>
+  <button type="submit">Adicionar Produto</button>
+</form>
+
+<!-- Seção onde os produtos serão listados -->
+<div id="product-list"></div>
+
+
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
